@@ -4,16 +4,11 @@ alert("Bienvenid@ a Simple Deco!")
 let tipoUsuario = prompt("Ingrese su tipo de usuario (mayorista o minorista):")
 
 while (tipoUsuario.toLowerCase() !== "mayorista" && tipoUsuario.toLowerCase() !== "minorista") 
-    {
-    tipoUsuario = prompt("El tipo de usuario ingresado no es válido. Por favor, ingrese 'mayorista' o 'minorista':")
-    }
+    
     if (tipoUsuario.toLowerCase() !== "mayorista" && tipoUsuario.toLowerCase() !== "minorista") 
         { alert("El tipo de usuario ingresado no es válido. Por favor, ingrese 'mayorista' o 'minorista'.") }
     
-    if (tipoUsuario.toLowerCase() === "mayorista") 
-    { alert("Bienvenido, usted es un usuario mayorista.") } 
-    else if (tipoUsuario.toLowerCase() === "minorista") 
-    { alert("Bienvenido, usted es un usuario minorista.") }
+    alert("Bienvenido, usted es un usuario " + tipoUsuario.toLowerCase() + ".")
 
 while (tipoUsuario.toLowerCase() === "mayorista")
     {
