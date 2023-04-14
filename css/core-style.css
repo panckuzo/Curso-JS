@@ -1098,7 +1098,13 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0;
+  margin: 0; 
+}
+.portada--img{
+  position: absolute;
+  width: 65%;
+  height: 100%;
+
 }
 .single-product-wrapper {
   position: relative;

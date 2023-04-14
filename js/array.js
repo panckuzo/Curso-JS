@@ -1,4 +1,5 @@
-const ESPEJOS =
+
+let ESPEJOS =
     [
     {producto: "ESPEJO JUANA MACRAME",
     precio:4000
@@ -8,11 +9,10 @@ const ESPEJOS =
     {
     producto:"ESPEJO SOL GRANDE",
     precio:5000
-    },
-    ];
+    }
+    ]
 
-    
-const LAMPARAS =
+let LAMPARAS =
     [
     {producto:"LAMPARA ALMA",
     precio: 9000
@@ -22,7 +22,7 @@ const LAMPARAS =
     }
     ]
 
-const CANASTOS =
+let CANASTOS =
     [
     {producto: "CESTO DAMASCO GRANDE", 
     precio: 4000},
@@ -43,7 +43,7 @@ const CANASTOS =
     precio:7000}
     ]; 
 
-const TAPICES =
+let TAPICES =
     [
     {producto: "TAPICES MACRAME JOSE", 
     precio: 4000},
@@ -59,7 +59,7 @@ const TAPICES =
     }
     ];
 
-const VELAS =
+let VELAS =
     [
     {producto: "FUSTA TRES VELAS AROMATICAS (Nag Champa)",
     precio: $1500},
@@ -89,7 +89,7 @@ const VELAS =
     precio:$1100}  
     ];
 
-const PANERAS =
+let PANERAS =
     [
     {producto: "PANAERA TRIGAL MEDIANA",
     precio: 2100},
@@ -99,7 +99,7 @@ const PANERAS =
     }
     ];
 
-const DECONAVIDAD =
+let DECONAVIDAD =
     [
     {producto: "CORONA NAVIDEÑA", 
     precio:$3700},
