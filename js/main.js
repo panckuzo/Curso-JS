@@ -1,4 +1,4 @@
-alert("Bienvenid@ a Simple Deco!")
+alert ("Bienvenid@ a Simple Deco!")
 
 const PRODUCTOS= [
   { id:2, nombre: "ESPEJO ALONDRA MEDIANO", precio: 6000 },
@@ -33,18 +33,16 @@ const PRODUCTOS= [
   { id:30, nombre: "ARBOLITO JERUSALEM CHICO", precio: 3200 },
 ]
 
-let tipoUsuario = prompt( "Ingrese su tipo de usuario (cliente o administrador):")
+let tipoUsuario = prompt("Ingrese su tipo de usuario (cliente o administrador):")
 
-while 
-    (tipoUsuario.toLowerCase() !== "cliente" && tipoUsuario.toLowerCase() !== "administrador")
-    if 
-    ( tipoUsuario.toLowerCase() !== "cliente" && tipoUsuario.toLowerCase() !== "administrador") 
-    {
-    alert(
-    "El tipo de usuario ingresado no es válido. Por favor, ingrese 'mayorista' o 'minorista'.")
-    }
+	while (tipoUsuario.toLowerCase() !== "cliente" && tipoUsuario.toLowerCase() !== "administrador")
+  {
+  	alert("El tipo de usuario ingresado no es válido. Por favor, ingrese 'cliente' o 'administrador'.")
 
-alert("Bienvenido! Usted ah seleccionado el de tipo de usuario " + tipoUsuario.toLowerCase() + ".")
+    tipoUsuario = prompt("Ingrese su tipo de usuario (cliente o administrador):")
+	}
+
+	alert("Bienvenido! Usted ah seleccionado el de tipo de usuario " + tipoUsuario.toLowerCase() + ".")
 
 
 
