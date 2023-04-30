@@ -1,116 +1,33 @@
-
-let ESPEJOS =
-    [
-    {producto: "ESPEJO JUANA MACRAME",
-    precio:4000
-    },
-    {producto:"ESPEJO ALONDRA MEDIANO", 
-    precio:6000},
-    {
-    producto:"ESPEJO SOL GRANDE",
-    precio:5000
-    }
-    ]
-
-let LAMPARAS =
-    [
-    {producto:"LAMPARA ALMA",
-    precio: 9000
-    },
-    {producto:"LAMPARA LIBERTAD", 
-    precio:6000
-    }
-    ]
-
-let CANASTOS =
-    [
-    {producto: "CESTO DAMASCO GRANDE", 
-    precio: 4000},
-
-    {producto: "CESTO BRISA", 
-    precio:5000},
-
-    {producto: "CESTO LEÑERO RENATA", 
-    precio:7000},
-
-    {producto: "CESTO CALA", 
-    precio: 6000},
-
-    {producto: "CESTO BRASIL",
-    precio:6000},
-
-    {producto: "CAJON LAUREL MEDIANO", 
-    precio:7000}
-    ]; 
-
-let TAPICES =
-    [
-    {producto: "TAPICES MACRAME JOSE", 
-    precio: 4000},
-
-    {producto: "TAPIZ MACRAME TATI", 
-    precio: 4000},
-
-    {producto: "TAPIZ-NOE", 
-    precio: 8000},
-
-    {producto: "TAPIZ MACRAME PLUMA",
-    precio: 2500
-    }
-    ];
-
-let VELAS =
-    [
-    {producto: "FUSTA TRES VELAS AROMATICAS (Nag Champa)",
-    precio: $1500},
-
-    {producto: "FUSTA TRES VELAS AROMATICAS (Lavanda)",
-    precio: $1500}, 
-
-    {producto: "FUSTA TRES VELAS AROMATICAS (Jazmin)",
-    precio: $1500},
-
-    {producto: "VELA AROMATICA GRANDE (Nag Champa)",
-    precio: $1300},
-
-    {producto: "VELA AROMATICA GRANDE(Lavanda)",
-    precio: $1300},
-
-    {producto: "VELAS AROMATICA GRANDE (Jazmin)",
-    precio: $1300},
-
-    {producto: "VELA AROMATICA MEDIANA (Nag Champa)",
-    precio: $1100},
-
-    {producto: "VELA AROMATICA MEDIANA (Lavanda)",
-    precio: $1100},
-
-    {producto: "VELAS AROMATICA MEDIANA (Jazmin)",
-    precio:$1100}  
-    ];
-
-let PANERAS =
-    [
-    {producto: "PANAERA TRIGAL MEDIANA",
-    precio: 2100},
-
-    {producto: "PANERA TRIGAL GRANDE",
-    precio: 2800
-    }
-    ];
-
-let DECONAVIDAD =
-    [
-    {producto: "CORONA NAVIDEÑA", 
-    precio:$3700},
-
-    {producto: "ESTRELLAS", 
-    precio:$500 },
-
-    {producto: "ARBOLITO JERUSALEM GRANDE", 
-    precio: $3600},
-
-    {producto: "ARBOLITO JERUSALEM CHICO", 
-    precio: $3200},
-    ]; 
-
+const PRODUCTOS = [
+    { id: 1, nombre: "ESPEJO JUANA MACRAME", descripcion: "", precio: 4000, stock: 5, },
+    { id: 2, nombre: "ESPEJO ALONDRA MEDIANO", descripcion: "", precio: 6000, stock: 6, },
+    { id: 3, nombre: "ESPEJO SOL GRANDE", descripcion: "", precio: 5000, stock: 3, },
+    { id: 1, nombre: "ESPEJO JUANA MACRAME", descripcion: "", precio: 4000, stock: 4, },
+    { id: 4, nombre: "LAMPARA ALMA", descripcion: "", precio: 9000, stock: 4, },
+    { id: 5, nombre: "LAMPARA LIBERTAD", descripcion: "", precio: 6000, stock: 2, },
+    { id: 6, nombre: "CESTO DAMASCO GRANDE", descripcion: "", precio: 4000, stock: 8, },
+    { id: 7, nombre: "CESTO BRISA", descripcion: "", precio: 5000, stock: 10, },
+    { id: 8, nombre: "CESTO LEÑERO RENATA", descripcion: "", precio: 7000, stock: 5, },
+    { id: 9, nombre: "CESTO CALA", descripcion: "", precio: 6000, stock: 4, },
+    { id: 10, nombre: "CESTO BRASIL", descripcion: "", precio: 6000, stock: 6, },
+    { id: 11, nombre: "CAJON LAUREL MEDIANO", descripcion: "", precio: 7000, stock: 4, },
+    { id: 12, nombre: "TAPICES MACRAME JOSE", descripcion: "", precio: 4000, stock: 2, },
+    { id: 13, nombre: "TAPIZ MACRAME TATI", descripcion: "", precio: 4000, stock: 3, },
+    { id: 14, nombre: "TAPIZ-NOE", descripcion: "", precio: 8000, stock: 4, },
+    { id: 15, nombre: "TAPIZ MACRAME PLUMA", descripcion: "", precio: 2500, stock: 4, },
+    { id: 16, nombre: "FUSTA TRES VELAS AROMATICAS (Nag Champa)", descripcion: "", precio: 1500, stock: 1010, },
+    { id: 17, nombre: "FUSTA TRES VELAS AROMATICAS (Lavanda)", descripcion: "", precio: 1500, stock: 1010, },
+    { id: 18, nombre: "FUSTA TRES VELAS AROMATICAS (Jazmin)", descripcion: "", precio: 1500, stock: 1010, },
+    { id: 19, nombre: "VELA AROMATICA GRANDE (Nag Champa)", descripcion: "", precio: 1300, stock: 1010, },
+    { id: 20, nombre: "VELA AROMATICA GRANDE(Lavanda)", descripcion: "", precio: 1300, stock: 1010, },
+    { id: 21, nombre: "VELAS AROMATICA GRANDE (Jazmin)", descripcion: "", precio: 1300, stock: 1010, },
+    { id: 22, nombre: "VELA AROMATICA MEDIANA (Nag Champa)", descripcion: "", precio: 1100, stock: 1010, },
+    { id: 23, nombre: "VELA AROMATICA MEDIANA (Lavanda)", descripcion: "", precio: 1100, stock: 1010, },
+    { id: 24, nombre: "VELAS AROMATICA MEDIANA (Jazmin)", descripcion: "", precio: 1100, stock: 1010, },
+    { id: 25, nombre: "PANAERA TRIGAL MEDIANA", descripcion: "", precio: 2100, stock: 10, },
+    { id: 26, nombre: "PANERA TRIGAL GRANDE", descripcion: "", precio: 2800, stock: 10, },
+    { id: 27, nombre: "CORONA NAVIDEÑA", descripcion: "", precio: 3700, stock: 10, },
+    { id: 28, nombre: "ESTRELLAS", descripcion: "", precio: 500, stock: 10, },
+    { id: 29, nombre: "ARBOLITO JERUSALEM GRANDE", descripcion: "", precio: 3600, stock: 10, },
+    { id: 30, nombre: "ARBOLITO JERUSALEM CHICO", descripcion: "", precio: 3200, stock: 10, },
+]
