@@ -50,20 +50,39 @@ function mostrarProductos() {
       <p>Descripcion: ${producto.descripcion}</p>
       <p>Precio: $${producto.precio}</p>
       <p>Stock: ${producto.stock}</p>
-      <button class="editar-btn" data-id="${producto.id}">Editar</button>
       <button class="eliminar-btn" data-id="${producto.id}">Eliminar</button>
     `;
     productosContainer.appendChild(productoCard);
 
 
+    const formEditar = document.getElementById('formEditar');
+formEditar.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const nombreExistente = document.getElementById("nombreExistente").value;
+  const producto = PRODUCTOS.find(p => p.nombre === nombreExistente || p.id == nombreExistente);
+  const nuevoNombre = document.getElementById("nuevoNombre").value;
+  const nuevoDescripcion = document.getElementById("nuevoDescripcion").value;
+  const nuevoPrecio = document.getElementById("nuevoPrecio").value;
+  const nuevoStock = document.getElementById("nuevoStock").value;
+  if (producto && nuevoNombre && nuevoPrecio && nuevoStock) {
+    producto.nombre = nuevoNombre;
+    producto.descripcion = nuevoDescripcion;
+    producto.precio = Number(nuevoPrecio);
+    producto.stock = Number(nuevoStock);
+    guardarProductos();
+    mostrarProductos();
+    formEditar.reset();
+  }
+});
+/*
     const editarBtn = productoCard.querySelector('.editar-btn');
     editarBtn.addEventListener('click', () => {
       const id = editarBtn.getAttribute('data-id');
       const producto = PRODUCTOS.find(p => p.id == id);
-      const nuevoNombre = prompt("Ingrese el nuevo nombre del producto", producto.nombre);
-      const nuevoDescripcion = prompt("Ingrese la nueva descricion", producto.descripcion);
-      const nuevoPrecio = prompt("Ingrese el nuevo precio del producto", producto.precio);
-      const nuevoStock = prompt("Ingrese el nuevo stock del producto", producto.stock);
+      const nuevoNombre = document.getElementById("nuevoNombre").value;
+      const nuevoDescripcion = document.getElementById("nuevoDescripcion").value;
+      const nuevoPrecio = document.getElementById("nuevoPrecio").value;
+      const nuevoStock = document.getElementById("nuevoStock").value;
       if (nuevoNombre && nuevoPrecio && nuevoStock) {
         producto.nombre = nuevoNombre;
         producto.descripcion = nuevoDescripcion;
@@ -71,8 +90,10 @@ function mostrarProductos() {
         producto.stock = Number(nuevoStock);
         guardarProductos();
         mostrarProductos();
+        document.getElementById('#editar').reset();
       }
     });
+    */
 
     
     const eliminarBtn = productoCard.querySelector('.eliminar-btn');

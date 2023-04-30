@@ -104,6 +104,8 @@ border: 1px solid #ccc;
 border-radius:5px;
 text-align: center;
 margin: 10px;
+position: relative;
+
 }
 
 .producto-card h6 
@@ -130,5 +132,10 @@ color:black
 border-radius: 5px;
 background-color: rgb(193, 178, 131);
 align-items: center;
+position: absolute;
+bottom: 5px;
+left: 50%;
+transform: translateX(-50%);
+
 
 }
