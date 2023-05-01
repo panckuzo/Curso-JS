@@ -166,15 +166,15 @@
                                 <br> Espejo ALONDRA terminación en yute con tejido y flecos. Medidas: espejo 20 cm, total 42 cm
                                 </p>
                             </div>
-                            <form class="cart clearfix"> 
-                                <button type="button" name="addtocart" class="btn amado-btn" id="2" onclick="addToCart(this.id)">AGREGAR AL CARRITO</button> 
+                            <div class="product-details-quantity">
+                                <label for="quantity">Cantidad:</label>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                            </div>
+                            <form class="cart clearfix">
+                                <a>
+                                    <button name="addtocart" class="btn amado-btn" data-id="2" onclick="agregarAlCarrito(event)">AGREGAR AL CARRITO</button>
+                                </a>
                             </form>
-                            <!-- Add to Cart Form -->
-                            <!-- <form class="cart clearfix" method="post"> -->
-                                <!-- <div class="cart-btn d-flex mb-50"> -->
-                                    <!-- <form class="cart clearfix" method="post"> -->
-                                        <!-- <a href="#"><button type="submit"  class="btn amado-btn" id="2">AGREGAR AL CARRITO</button></a> -->
-                                    <!-- </form> -->
 
 
                         </div>
@@ -261,7 +261,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </footer>
     <!-- ##### Footer Area End ##### -->
-<script src="./js/carrito.js"></script>
+
+    <script src="./js/array.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 
 </html>
