@@ -1,4 +1,4 @@
-const PRODUCTOS = [
+let PRODUCTOS = [
     { id: 1, nombre: "ESPEJO JUANA MACRAME", descripcion: "", precio: 4000, stock: 5, },
     { id: 2, nombre: "ESPEJO ALONDRA MEDIANO", descripcion: "", precio: 6000, stock: 6, },
     { id: 3, nombre: "ESPEJO SOL GRANDE", descripcion: "", precio: 5000, stock: 3, },
@@ -31,16 +31,17 @@ const PRODUCTOS = [
     { id: 30, nombre: "ARBOLITO JERUSALEM CHICO", descripcion: "", precio: 3200, stock: 10, },
 ]
 
-
 function guardarProductos() {
   const productosJSON = JSON.stringify(PRODUCTOS);
   localStorage.setItem("productos", productosJSON);
 }
 
-
 function mostrarProductos() {
   const productosContainer = document.getElementById("productos-container");
   productosContainer.innerHTML = '';
+
+  const productosJSON = localStorage.getItem("productos");
+  productosJSON ? PRODUCTOS = JSON.parse(productosJSON) : null; 
 
   PRODUCTOS.forEach((producto) => {
     const productoCard = document.createElement("div");
@@ -54,51 +55,29 @@ function mostrarProductos() {
     `;
     productosContainer.appendChild(productoCard);
 
-
-    const formEditar = document.getElementById('formEditar');
-formEditar.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const nombreExistente = document.getElementById("nombreExistente").value;
-  const producto = PRODUCTOS.find(p => p.nombre === nombreExistente || p.id == nombreExistente);
-  const nuevoNombre = document.getElementById("nuevoNombre").value;
-  const nuevoDescripcion = document.getElementById("nuevoDescripcion").value;
-  const nuevoPrecio = document.getElementById("nuevoPrecio").value;
-  const nuevoStock = document.getElementById("nuevoStock").value;
-  if (producto && nuevoNombre && nuevoPrecio && nuevoStock) {
-    producto.nombre = nuevoNombre;
-    producto.descripcion = nuevoDescripcion;
-    producto.precio = Number(nuevoPrecio);
-    producto.stock = Number(nuevoStock);
-    guardarProductos();
-    mostrarProductos();
-    formEditar.reset();
-  }
-});
-/*
-    const editarBtn = productoCard.querySelector('.editar-btn');
-    editarBtn.addEventListener('click', () => {
-      const id = editarBtn.getAttribute('data-id');
-      const producto = PRODUCTOS.find(p => p.id == id);
+    const formEditar = document.getElementById("formEditar");
+    formEditar.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const nombreExistente = document.getElementById("nombreExistente").value;
+      const producto = PRODUCTOS.find(p => p.nombre === nombreExistente || p.id == nombreExistente);
       const nuevoNombre = document.getElementById("nuevoNombre").value;
       const nuevoDescripcion = document.getElementById("nuevoDescripcion").value;
       const nuevoPrecio = document.getElementById("nuevoPrecio").value;
       const nuevoStock = document.getElementById("nuevoStock").value;
-      if (nuevoNombre && nuevoPrecio && nuevoStock) {
+      if (producto && nuevoNombre && nuevoPrecio && nuevoStock) {
         producto.nombre = nuevoNombre;
         producto.descripcion = nuevoDescripcion;
         producto.precio = Number(nuevoPrecio);
         producto.stock = Number(nuevoStock);
         guardarProductos();
         mostrarProductos();
-        document.getElementById('#editar').reset();
+        formEditar.reset();
       }
     });
-    */
 
-    
-    const eliminarBtn = productoCard.querySelector('.eliminar-btn');
-    eliminarBtn.addEventListener('click', () => {
-      const id = eliminarBtn.getAttribute('data-id');
+    const eliminarBtn = productoCard.querySelector(".eliminar-btn");
+    eliminarBtn.addEventListener("click", () => {
+      const id = eliminarBtn.getAttribute("data-id");
       const index = PRODUCTOS.findIndex(p => p.id == id);
       if (index !== -1) {
         PRODUCTOS.splice(index, 1);
@@ -111,21 +90,19 @@ formEditar.addEventListener('submit', (e) => {
 
 function agregarProducto(e) {
   e.preventDefault();
-  const nombre = document.getElementById('nombre').value;
-  const descripcion = document.getElementById('descripcion').value;
-  const precio = document.getElementById('precio').value;
-  const stock = document.getElementById('stock').value;
+  const nombre = document.getElementById("nombre").value;
+  const descripcion = document.getElementById("descripcion").value;
+  const precio = document.getElementById("precio").value;
+  const stock = document.getElementById("stock").value;
   const nuevoId = PRODUCTOS.length + 1;
   PRODUCTOS.push({ id: nuevoId, nombre: nombre, descripcion: descripcion, precio: precio, stock: stock });
   guardarProductos();
   mostrarProductos();
-  document.getElementById('formAgregar').reset();
+  document.getElementById("formAgregar").reset();
 }
-
 
 mostrarProductos();
 
-
-const form = document.getElementById('formAgregar');
-form.addEventListener('submit', agregarProducto);
+const form = document.getElementById("formAgregar");
+form.addEventListener("submit", agregarProducto);
 
