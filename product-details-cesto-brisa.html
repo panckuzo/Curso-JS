@@ -146,9 +146,14 @@
                                 </p>
                             </div>
 
-                            <!-- Add to Cart Form -->
-                            <form class="cart clearfix" method="post">
-                                <a href="cart.html"><button type="submit" name="addtocart" value="5" class="btn amado-btn">AGREGAR AL CARRITO</button></a>
+                            <div class="product-details-quantity">
+                                <label for="quantity">Cantidad:</label>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                            </div>
+                            <form class="cart clearfix">
+                                <a>
+                                    <button name="addtocart" class="btn amado-btn" data-id="7" onclick="agregarAlCarrito(event)">AGREGAR AL CARRITO</button>
+                                </a>
                             </form>
 
                         </div>
@@ -235,9 +240,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </footer>
     <!-- ##### Footer Area End ##### -->
-
-
-
+<script src="./js/array.js"></script>
+<script src="./js/productos.js"></script>
+<script src="./js/carrito.js"></script>
 </body>
 
 </html>

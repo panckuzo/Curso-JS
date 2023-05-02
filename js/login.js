@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
   const password = document.querySelector('#password').value;
 
 
-  if (username === 'jose' && password === '1234') {
+  if (username.toLowerCase() === 'jose' && password === '1234') {
     
     window.location.href = 'admin.html';
 
