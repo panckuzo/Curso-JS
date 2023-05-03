@@ -27,6 +27,13 @@ if (carrito && carrito.length > 0) {
             <p>${producto.cantidad}</p>
             </div>
         </td>
+        <td class="qty">
+           
+            <button class="aumentar-cantidad" onclick="aumentarCantidad(event)">+</button>
+            <button class="reducir-cantidad" onclick="reducirCantidad(event)">-</button>
+            
+            
+        </td>
         </tr>
     `;
     }
@@ -41,7 +48,32 @@ document.querySelector(".cart-table tbody").innerHTML = productosHTML;
 
 
 
+function aumentarCantidad(e) {
+    carrito = JSON.parse(localStorage.getItem("carrito"))
+    const boton = e.target;
+    const item = boton.closest('.item-carrito');
+    const nombre = item.querySelector('.nombre').textContent;
+    const carritoItemsArray = JSON.parse(localStorage.getItem('carrito')) || [];
+    const productoEnCarrito = carritoItemsArray.find(item => item.nombre === nombre);
+    productoEnCarrito.cantidad++;
+    localStorage.setItem('carrito', JSON.stringify(carritoItemsArray));
+    
+}
+  
+function reducirCantidad(e) {
+    carrito = JSON.parse(localStorage.getItem("carrito"))
+    const boton = e.target;
+    const item = boton.closest('.item-carrito');
+    const nombre = item.querySelector('.nombre').textContent;
+    const carritoItemsArray = JSON.parse(localStorage.getItem('carrito')) || [];
+    const productoEnCarrito = carritoItemsArray.find(item => item.nombre === nombre);
+    if (productoEnCarrito.cantidad > 1) {
+        productoEnCarrito.cantidad--;
+        localStorage.setItem('carrito', JSON.stringify(carritoItemsArray))}
 
-
-
+}
+function vaciarCarrito() {
+    localStorage.removeItem("carrito");
+    
+}
 

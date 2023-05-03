@@ -15,7 +15,12 @@ form.addEventListener('submit', (e) => {
     form.reset();
 
   } else {
-    
-    alert('Usuario o contraseña incorrectos');
+    Swal.fire({
+      title: "Usuario o Contraseña incorrectos",
+      text:"Intentelo nuevamnete",
+      icon:"error",
+      confirmButtonText: "OK",
+      timer: 5000
+    });
   }
 });
