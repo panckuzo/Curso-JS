@@ -73,6 +73,12 @@ function mostrarProductos() {
         mostrarProductos();
         formEditar.reset();
       }
+      Toastify({
+        text: "El producto se edito",
+        style:
+        {background: "orange"},
+        duration: 3000
+        }).showToast();
     });
 
     const eliminarBtn = productoCard.querySelector(".eliminar-btn");
@@ -84,6 +90,12 @@ function mostrarProductos() {
         guardarProductos();
         mostrarProductos();
       }
+      Toastify({
+        text: "El producto se elimino",
+        style:
+        {background: "orange"},
+        duration: 3000
+        }).showToast();
     });
   });
 }
@@ -99,6 +111,12 @@ function agregarProducto(e) {
   guardarProductos();
   mostrarProductos();
   document.getElementById("formAgregar").reset();
+  Toastify({
+    text: "El producto agrego correctamente",
+    style:
+    {background: "orange"},
+    duration: 3000
+    }).showToast();
 }
 
 mostrarProductos();

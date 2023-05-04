@@ -11,12 +11,20 @@ function agregarAlCarrito(evento) {
             precio: producto.precio,
             cantidad: parseInt(document.getElementById("quantity").value)
         };
-        let carrito = JSON.parse(localStorage.getItem("carrito")) || []; // agregar chequeo aquí
+        let carrito = JSON.parse(localStorage.getItem("carrito")) || []; 
         carrito.push(itemCarrito);
         localStorage.setItem("carrito", JSON.stringify(carrito));
         console.log(carrito);
     } else {
         console.log("Producto no encontrado");
     }
+
+    Toastify({
+        text: "Se agrego al Carrito",
+        style:
+        {background: "orange"},
+        duration: 3000
+        }).showToast();
+
 }
 
