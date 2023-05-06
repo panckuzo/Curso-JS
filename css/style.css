@@ -97,8 +97,8 @@ list-style: none;
 
 .producto-card 
 {
-width: 200px;
-height: 250px;
+width: 300px;
+height: auto;
 background-color: #f0f0f0;
 border: 1px solid #ccc;
 border-radius:5px;
@@ -136,4 +136,13 @@ position: absolute;
 bottom: 5px;
 left: 50%;
 transform: translateX(-50%);
+}
+
+.btn-index
+{
+margin: 1rem;
+background-color:rgb(193, 178, 131); 
+border-radius: 5px;
+width: 10rem; 
+
 }

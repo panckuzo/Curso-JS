@@ -1,7 +1,7 @@
 
 
 const PRODUCTOS= [
-  { id:1, nombre: "ESPEJO JUANA MACRAME", precio:4000},
+  { id:1, nombre: "ESPEJO JUANA MACRAME", precio:4000, imagen: src= "img\product-img\esp-juana1.jpg", },
   { id:2, nombre: "ESPEJO ALONDRA MEDIANO", precio: 6000 },
   { id:3, nombre: "ESPEJO SOL GRANDE", precio: 5000 },
   { id:1, nombre: "ESPEJO JUANA MACRAME", precio: 4000 },

@@ -9,6 +9,7 @@ function agregarAlCarrito(evento) {
             id: producto.id,
             nombre: producto.nombre,
             precio: producto.precio,
+            imagen: producto.imagen,
             cantidad: parseInt(document.getElementById("quantity").value)
         };
         let carrito = JSON.parse(localStorage.getItem("carrito")) || []; 

@@ -41,8 +41,9 @@ document.querySelector(".cart-table tbody").innerHTML = productosHTML;
 
 
 
+
 function vaciarCarrito() {
     localStorage.removeItem("carrito");
     location.reload();
-  }
+}
 
