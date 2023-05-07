@@ -1,10 +1,12 @@
-    var amadoMobNav = $('.amado-navbar-toggler');
-    var navClose = $('.nav-close');
+// :: 2.2 Mobile Nav Active Code
+var amadoMobNav = document.querySelector('.amado-navbar-toggler');
+var navClose = document.querySelector('.nav-close');
+var headerArea = document.querySelector('.header-area');
 
-    amadoMobNav.on('click', function () {
-        $('.header-area').toggleClass('bp-xs-on');
-    });
+amadoMobNav.addEventListener('click', function () {
+    headerArea.classList.toggle('bp-xs-on');
+});
 
-    navClose.on('click', function () {
-        $('.header-area').removeClass('bp-xs-on');
-    });
+navClose.addEventListener('click', function () {
+    headerArea.classList.remove('bp-xs-on');
+});
