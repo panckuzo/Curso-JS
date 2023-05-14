@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
 
     <!-- Title  -->
     <title>SIMPLE Deco- Mercado Virtual</title>
@@ -25,25 +25,6 @@
     <a class="btn-wsp" target="_blank" href="https://api.whatsapp.com/send?phone=543413237500"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
     <!--  -->
     
-    <!-- Search Wrapper Area Start -->
-    <div class="search-wrapper section-padding-100">
-        <div class="search-close">
-            <i class="fa fa-close" aria-hidden="true"></i>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="search-content">
-                        <!-- <form action="#" method="get">
-                            <input type="search" name="search" id="search" placeholder="Type your keyword...">
-                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
-                        </form> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Search Wrapper Area End -->
 <main>
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
@@ -84,7 +65,6 @@
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
                 <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> CARRITO </a>
-                <!-- <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> BUSCAR</a> -->
             </div>
             <!-- Social Button -->
             <div class="social-info d-flex justify-content-between">
@@ -106,7 +86,7 @@
                 <div class="catagories-menu">
                     <ul>
                         <li class="active"><a href="./shop.html">TODOS LOS PRODUCTOS</a></li>
-                        <li><a href="shop.-espejos.html">ESPEJOS</a></li>
+                        <li><a href="shop-espejos.html">ESPEJOS</a></li>
                         <li><a href="shop-lamparas.html">LAMPARAS</a></li>
                         <li><a href="shop-canastos.html">CAJONES Y CANASTOS</a></li>
                         <li><a href="shop-tapices.html">TAPICES</a></li>
@@ -155,47 +135,10 @@
                 
                 </div>
             </div>
-
-            <!-- ##### Single Widget ##### -->
-            <div class="widget price mb-50">
-                <!-- Widget Title -->
-                <h6 class="widget-title mb-30">Precio</h6>
-
-                <div class="widget-desc">
-                    <div class="slider-range" id="selectOrdenarPrecio">
-                        <div data-min="500" data-max="30000" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="500" data-value-max="30000" data-label-result="">
-                            <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
-                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
-                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
-                        </div>
-                        <div class="range-price">$500 - $30000</div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="amado_product_area section-padding-100">
             <div class="container-fluid">
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="product-topbar d-xl-flex align-items-end justify-content-between">
-                            <!-- Sorting -->
-                            <div class="product-sorting d-flex">
-                                <div class="sort-by-date d-flex align-items-center mr-15">
-                                    <p>Ordenar por</p>
-                                    <form action="#" method="get">
-                                        <select name="select" id="sortBydate">
-                                            <option value="mayor-precio">Mayor precio</option>
-                                            <option value="menor-precio">Menor precio</option>
-                                        </select>
-                                    </form>
-                                </div>                                       
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="row" id="container"></div>
                 <div id="lista-productos"></div>
             </div>
@@ -241,10 +184,10 @@
                             <a href="index.html"><img class="footer__img" src="./img/Logo SIMPLE sin fondo.png" alt=""></a>
                         </div>
                         <!-- Copywrite Text -->
-                        <p class="copywrite"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="copywrite">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 
 <br> Sitio web creado por  <i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/redes.marketing.digital/?hl=es-la" target="_blank">REDes</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
                     </div>
                 </div>
                 <!-- Single Widget Area -->
@@ -286,6 +229,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="./js/array.js"></script>
     <script src="./js/shop.js"></script>
     <script src="./js/productos.js"></script>
+    <script src="./js/buscar.js"></script>
+    <script src="./js/filtrar.js"></script>
     
 
 </body>
