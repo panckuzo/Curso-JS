@@ -36,7 +36,7 @@ if (carrito && carrito.length > 0) {
 let total = subtotal;
 
 document.querySelector(".summary-table li:first-child span:last-child").textContent = "$" + subtotal.toFixed(2);
-document.querySelector(".summary-table li:last-child span:last-child").textContent = "$" + total.toFixed(2);
+document.querySelector(".summary-table li:last-child span:last-child").textContent = "TOTAL $" + total.toFixed(2);
 document.querySelector(".cart-table tbody").innerHTML = productosHTML;
 
 

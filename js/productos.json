@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "nombre": "ESPEJO JUANA MACRAME",
+        "descripcion": "Tejido en macramé con hilo algodón natural. Diámetro total: 40 cm (espejo 20 cm)",
+        "precio": 4000,
+        "stock": 5,
+        "imagen": "img/product-img/esp-juana1.jpg",
+        "imagen2": "img/product-img/esp-juana3.jpg",
+        "href": "product-details-espejojuana.html"
+    },
+    {
+        "id": 2,
+        "nombre": "ESPEJO ALONDRA MEDIANO",
+        "descripcion": "Terminación en yute con tejido y flecos. Medidas: espejo 20 cm, total 42 cm",
+        "precio": 6000,
+        "stock": 6,
+        "imagen": "./img/product-img/esp-alondra1.jpg",
+        "imagen2":"img/product-img/esp-alondra2.jpg",
+        "href":"product-details-espejoalondra.html"
+    },
+    {
+        "id": 3,
+        "nombre": "ESPEJO SOL GRANDE",
+        "descripcion": " Terminación en yute con flecos. Medidas: espejo 32 cm, total 51 cm",
+        "precio": 5000,
+        "stock": 3,
+        "imagen": "img/product-img/esp-sol1.jpg",
+        "imagen2":"img/product-img/esp-sol2.jpeg",
+        "href": "product-details-espsol.html"
+    },
+    {
+        "id": 4,
+        "nombre": "LAMPARA ALMA",
+        "descripcion": "Lampara de mimbre calada. Medidas 50 cm x 40 cm",
+        "precio": 9000,
+        "stock": 4,
+        "imagen": "img/product-img/lampara-alma.jpg",
+        "imagen2":"img/product-img/lampara-alma.jpg",
+        "href":"product-details-lamp-alma.html"
+    },
+    {
+        "id": 5,
+        "nombre": "LAMPARA LIBERTAD",
+        "descripcion": " Confeccionada en yute y macramé, viene en color blanco o negro, con lampara de led cálida. Largo del cable 1,60 m",
+        "precio": 6000,
+        "stock": 2,
+        "imagen": "img/product-img/lampara-libertad.jpg",
+        "imagen2": "img/product-img/lampara-libertad.jpg",
+        "href":"product-details-lamp-libertad.html"
+    },
+    {
+        "id": 6,
+        "nombre": "CESTO DAMASCO GRANDE",
+        "descripcion": "Cesto de palma con tapa 25 cm de diámetro x 20 cm de alto.",
+        "precio": 4000,
+        "stock": 8,
+        "imagen": "img/product-img/cesto-damasco.jpg",
+        "imagen2": "img/product-img/CESTO-DAMASCO2.jpg",
+        "href":"product-details-cesto-damasco.html"
+    },
+    {
+        "id": 7,
+        "nombre": "CESTO BRISA",
+        "descripcion": "Cesto de mimbre de textura abierta. Medidas 30 cm x30 cm",
+        "precio": 5000,
+        "stock": 10,
+        "imagen": "img/product-img/cesto brisa.jpg",
+        "imagen2": "img/product-img/cesto brisa.jpg",
+        "href": "product-details-cesto-brisa.html"
+    },
+    {
+        "id": 8,
+        "nombre": "CESTO LEÑERO RENATA",
+        "descripcion": "Canasto leñero de mimbre con asas del mismo materias. Medidas 50 cm x 50 cm",
+        "precio": 7000,
+        "stock": 5,
+        "imagen": " img/product-img/cesto-leñero.jpeg",
+        "imagen2":"img/product-img/cesto-leñero2.jpg",
+        "href":"producto-details-cesto-renata.html"
+    },
+    {
+        "id": 9,
+        "nombre": "CESTO CALA",
+        "descripcion": "Mimbre entretejido en su base, con detalles de calado en su borde. Medidas 30 cm x 40 cm.",
+        "precio": 6000,
+        "stock": 4,
+        "imagen": " img/product-img/cesto-cala.jpg",
+        "imagen2": " img/product-img/cesto-cala.jpg",
+        "href":"product-details.cesto-cala.html"
+    },
+    {
+        "id": 10,
+        "nombre": "CESTO BRASIL",
+        "descripcion": "Cesto de palma con asas de gamuza! 30 cm de diámetro x 32 cm de alto",
+        "precio": 6000,
+        "stock": 6,
+        "imagen": "img/product-img/CESTO-BRAZIL.jpg",
+        "imagen2":"img/product-img/CESTO-BRAZIL2.jpg",
+        "href":"product-details-cesto-brasil.html"
+    },
+    {
+        "id": 11,
+        "nombre": "CAJON LAUREL MEDIANO",
+        "descripcion": "Cajones Laurel mediano x3. Rectangulares de mimbre. Medidas 32 x 22 12 / 22 x 17 x 12 / 19 x 11 x 9",
+        "precio": 7000,
+        "stock": 4,
+        "imagen": "img/product-img/CESTO-LAUREL.jpg",
+        "imagen2": "img/product-img/CESTO-LAUREL.jpg",
+        "href":"product-details-cesto-laurel.html"
+    },
+    {
+        "id": 12,
+        "nombre": "TAPICES MACRAME JOSE",
+        "descripcion": "Tejido en macramé con hilo de algodón natural. Presentado en tubo individual ideal para regalar o regalarte.Medidas: 35 x 60 cm",
+        "precio": 4000,
+        "stock": 2,
+        "imagen": "img/product-img/tapiz-jose1.jpeg",
+        "imagen2":"img/product-img/tapiz-jose3.jpeg",
+        "href":"product-details-tapiz-jose.html"
+    },
+    {
+        "id": 13,
+        "nombre": "TAPIZ MACRAME TATI",
+        "descripcion": "",
+        "precio": 4000,
+        "stock": 3,
+        "imagen": "img/product-img/tapiz-tati1-01.jpeg",
+        "imagen2": "img/product-img/tapiz-tati1-01.jpeg",
+        "href": "product-details-tapiz-tati.html"
+    },
+    {
+        "id": 14,
+        "nombre": "TAPIZ-NOE",
+        "descripcion": "Tejido en macramé con hilo de algodón natural. Presentado en tubo individual ideal para regalar o regalarte.Medidas: 35 x 50 cm.",
+        "precio": 8000,
+        "stock": 4,
+        "imagen": "img/product-img/tapiz-noe1.jpeg",
+        "imagen2":"img/product-img/tapiz-noe2.jpeg",
+        "href":"product-details-tapiz-noe.html"
+    },
+    {
+        "id": 15,
+        "nombre": "TAPIZ MACRAME PLUMA",
+        "descripcion": "Tejido en macramé, con hilo natural. Presentado en tubo individual, que lo convierte en un hermoso y significativo regalo.Tamaño del tapiz: 40 cm x 15 cm",
+        "precio": 2500,
+        "stock": 4,
+        "imagen": "img/product-img/tapiz-plumas1.jpeg",
+        "imagen2":"img/product-img/tapiz-plumas2.jpeg",
+        "href":"product-details-tapiz-plumas.html"
+    },
+    {
+        "id": 16,
+        "nombre": "FUSTA TRES VELAS AROMATICAS (Nag Champa)",
+        "descripcion": "Fusta de tres velas aromáticas.",
+        "precio": 1500,
+        "stock": 10,
+        "imagen": "img/product-img/3velas1.jpg",
+        "imagen2":"img/product-img/3velas2.jpg",
+        "href":"product-details-fusta-nag.html"
+    },
+    {
+        "id": 17,
+        "nombre": "FUSTA TRES VELAS AROMATICAS (Lavanda)",
+        "descripcion": "Fusta de tres velas aromáticas.",
+        "precio": 1500,
+        "stock": 10,
+        "imagen": "img/product-img/3velas1.jpg",
+        "imagen2":"img/product-img/3velas2.jpg",
+        "href":"product-details-fusta-lavanda.html"
+    },
+    {
+        "id": 18,
+        "nombre": "FUSTA TRES VELAS AROMATICAS (Jazmin)",
+        "descripcion": "Fusta de tres velas aromáticas.",
+        "precio": 1500,
+        "stock": 10,
+        "imagen": "img/product-img/3velas1.jpg",
+        "imagen2":"img/product-img/3velas2.jpg",
+        "href":"product-details-fusta-jazmin.html"
+    },
+    {
+        "id": 19,
+        "nombre": "VELA AROMATICA GRANDE (Nag Champa)",
+        "descripcion": "Tamaño: Grande 10 cm de diámetro.",
+        "precio": 1300,
+        "stock": 10,
+        "imagen": "img/product-img/velagrande.jpg",
+        "imagen2":"img/product-img/vela2.webp",
+        "href":"product-details-vela-grande-nag.html"
+    },
+    {
+        "id": 20,
+        "nombre": "VELA AROMATICA GRANDE(Lavanda)",
+        "descripcion": "Tamaño: Grande 10 cm de diámetro.",
+        "precio": 1300,
+        "stock": 10,
+        "imagen": "img/product-img/velagrande.jpg",
+        "imagen2":"img/product-img/vela2.webp",
+        "href":"product-details-vela-grande-lavanda.html"
+    },
+    {
+        "id": 21,
+        "nombre": "VELAS AROMATICA GRANDE (Jazmin)",
+        "descripcion": "Tamaño: Grande 10 cm de diámetro.",
+        "precio": 1300,
+        "stock": 10,
+        "imagen": "img/product-img/velagrande.jpg",
+        "imagen2":"img/product-img/vela2.webp",
+        "href":"product-details-vela-grande-jazmin.html"
+    },
+    {
+        "id": 22,
+        "nombre": "VELA AROMATICA MEDIANA (Nag Champa)",
+        "descripcion": "Tamaño: Grande 8 cm de diámetro.",
+        "precio": 1100,
+        "stock": 10,
+        "imagen": "img/product-img/vela-mediana.jpg",
+        "imagen2":"img/product-img/vela3.webp",
+        "href":"product-details-vela-mediana-nag.html"
+    },
+    {
+        "id": 23,
+        "nombre": "VELA AROMATICA MEDIANA (Lavanda)",
+        "descripcion": "Tamaño: Grande 8 cm de diámetro.",
+        "precio": 1100,
+        "stock": 10,
+        "imagen": "img/product-img/vela-mediana.jpg",
+        "imagen2":"img/product-img/vela3.webp",
+        "href":"product-details-vela-mediana-lavanda.html"
+    },
+    {
+        "id": 24,
+        "nombre": "VELAS AROMATICA MEDIANA (Jazmin)",
+        "descripcion": "Tamaño: Grande 8 cm de diámetro.",
+        "precio": 1100,
+        "stock": 10,
+        "imagen": "img/product-img/vela-mediana.jpg",
+        "imagen2":"img/product-img/vela3.webp",
+        "href":"product-details-vela-mediana-jazmin.html"
+    },
+    {
+        "id": 25,
+        "nombre": "PANAERA TRIGAL MEDIANA",
+        "descripcion": "Confeccionada en yute, también se puede usar como organizador. Medidas 18 cm de diámetro y 7,5 cm de alto.",
+        "precio": 2100,
+        "stock": 10,
+        "imagen": "img/product-img/panera1.jpg",
+        "imagen2":"img/product-img/panera2.jpg",
+        "href":"product-details-panera-mediana.html"
+    },
+    {
+        "id": 26,
+        "nombre": "PANERA TRIGAL GRANDE",
+        "descripcion": "Confeccionada en yute, también se puede usar como organizador.Medidas 20 cm de diámetro y 8,5 cm de alto",
+        "precio": 2800,
+        "stock": 10,
+        "imagen": "img/product-img/panera1.jpg",
+        "imagen2":"img/product-img/panera2.jpg",
+        "href":"product-details-panera-grande.html"
+    },
+    {
+        "id": 27,
+        "nombre": "CORONA NAVIDEÑA",
+        "descripcion": "Diámetro: 40 cm",
+        "precio": 3700,
+        "stock": 10,
+        "imagen": "img/product-img/corona1.jpg",
+        "imagen2":"img/product-img/corona2.jpg",
+        "href":"product-details-corona.html"
+    },
+    {
+        "id": 28,
+        "nombre": "ESTRELLAS",
+        "descripcion": "Con materiales naturales, y de confección artesanal, regalate objetos con alma",
+        "precio": 500,
+        "stock": 10,
+        "imagen": "img/product-img/estrellas.jpg",
+        "imagen2": "img/product-img/estrellas.jpg",
+        "href":"product-details-estrella.html"
+    },
+    {
+        "id": 29,
+        "nombre": "ARBOLITO JERUSALEM GRANDE",
+        "descripcion": "Medida 1m",
+        "precio": 3600,
+        "stock": 10,
+        "imagen": "img/product-img/arbolito.jpg",
+        "imagen2": "img/product-img/arbolito.jpg",
+        "href":"product-details-arbol-grande.html"
+    },
+    {
+        "id": 30,
+        "nombre": "ARBOLITO JERUSALEM CHICO",
+        "descripcion": "Medida 80 cm",
+        "precio": 3200,
+        "stock": 10,
+        "imagen": "img/product-img/arbolito.jpg",
+        "imagen2": "img/product-img/arbolito.jpg",
+        "href":"product-details-arbol-chico.html"
+    }
+]
